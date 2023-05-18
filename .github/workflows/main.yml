@@ -1,0 +1,12 @@
+name: Deployment
+
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  mobile-lab:
+    runs-on: ubuntu-latest
+    environment: mobile-lab
+
+    steps:
+      - name: Say hello world
+        run: echo Hello, world!
